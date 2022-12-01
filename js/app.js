@@ -7,7 +7,7 @@ function startClock(){
     let min = today.getMinutes();
     let sec = today.getSeconds();
 
-    ap = (hr < 12) ? "<span>AM</span>" : "<span>PM</span>";
+    ap = (hr > 12) ? "<span></span>" : "<span>AM</span>";
     hr = (hr == 0) ? hr - 12 : hr;
 
     hr = checkTime(hr);
